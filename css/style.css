@@ -2,14 +2,14 @@
 font-family: "Gilroy";
 font-style: normal;
 font-weight: 800;
-src: url("C:\Users\mout\Documents\GitHub\1173585-device-26\gilroy") format("truetype");
+src: url("/gilroy/Gilroyextrabold.ttf") format("truetype");
 }
 
 @font-face {
 font-family: "Gilroy";
 font-style: normal;
 font-weight: 300;
-src: url("C:\Users\mout\Documents\GitHub\1173585-device-26\gilroy") format("truetype");
+src: url("/gilroy/Gilroylight.ttf") format("truetype");
 }
 
 body 
@@ -17,22 +17,20 @@ body
 	margin: 0;
 	padding: 0;
      
-    font-family: "OpenSans" , sans-serif , "Gilroy" , "Arial";
+    font-family: "OpenSans" ,"Gilroy", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
-    color: #ffffff;
-    background-color: white;
-    width: 1440px;
-    height: 2795px;
-}
+    color: #000000;
+    background-color: #ffffff;
+  }
 
 a  {
 	text-decoration: none;
    }
 
 p {
-  font-family: "OpenSans";
+  font-family: "OpenSans" ,"Gilroy", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 15px;
@@ -107,34 +105,22 @@ p {
 }
 
 .main_header {
-  width: 1160px;
-  height: 299px;
-  opacity: 1px;
   background-color: #f0c52e;
 }
 
 .catalog_header {
-  width: 1160px;
-  height: 186px;
-  opacity: 1px;
   background-color: #f0c52e;
 }
 
 .popular-item {
-  width: 160px;
-  height: 160px;
-  opacity: 1px;
+  
   background-color: #f0c52e;
 }
 
-.service-background {
-  width: 1440px;
-  height: 288px;
-  background-color: #e5e5e5;
+.slider_service {
+background-color: #e5e5e5;
 }
 
 .footer_menu {
-  width: 1440px;
-  height: 323px;
   background-color: #464646;
 }
