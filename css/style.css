@@ -30,6 +30,17 @@ a  {
 	color: inherit;
 }
 
+.button {
+	color: #000000;
+	font-family: Gilroy;
+	font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 4px;
+ 
+  
+}
+
 .navigation_item {
 	color: #000000;
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -49,12 +60,24 @@ a  {
 	letter-spacing: 3px;
 }
 
+.footer_navigation_item.site_navigation {
+	color: #ffffff;
+}
+
+.catalog_item {
+	color: #000000;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 36px;
+	letter-spacing: 1px;
+}
 .about {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 47px;
-	line-height: 47px;
+	line-height: 48px;
 	letter-spacing: 1px;
 }
 
@@ -71,7 +94,16 @@ a  {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 40px;
+}
+
+.section_title {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 48px;
+	letter-spacing: 1px;
 }
 
 .title_catalog {
@@ -81,6 +113,15 @@ a  {
 	font-size: 47px;
 	line-height: 47px;
 	letter-spacing: 1px;
+}
+
+.button_logout {
+	color: rgba(0, 0, 0, 0.3);
+    font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 1px;
 }
 
 .footer_navigation {
@@ -93,13 +134,13 @@ a  {
 }
 
 .footer_navigation_item {
-	color: #ffffff;
-	text-transform: uppercase;
+    color: #ffffff;
 	font-family: "Gilroy", "Arial", sans-serif;
-	font-size: 18px;
 	font-weight: 800;
-	line-height: 18px;
-	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3px;
 }
 
 .main_header {
@@ -123,6 +164,7 @@ a  {
     background-color: #000000;
 }
 
-.footer_menu {
+.footer {
 	background-color: #464646;
+	color: #ffffff;
 }
