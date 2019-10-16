@@ -49,6 +49,23 @@ a  {
 	letter-spacing: 3px;
 }
 
+.about {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 47px;
+	letter-spacing: 1px;
+}
+
+.about_title {
+    color: #464646;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+}
+
 .about_item {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -57,37 +74,28 @@ a  {
 	line-height: 16px;
 }
 
-.about {
-	font-family: "Gilroy", "Arial", sans-serif;
-	color: #000000;
-	font-size: 47px;
-	font-weight: 800;
-	line-height: 47px;
-	letter-spacing: 1px;
-}
-
 .title_catalog {
-	font-family: "Gilroy", "Arial", sans-serif;
 	color: #000000;
-	font-size: 47px;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
+	font-size: 47px;
 	line-height: 47px;
 	letter-spacing: 1px;
 }
 
 .footer_navigation {
-	font-family: "Open Sans", "Arial", sans-serif;
 	color: rgba(255, 255, 255, 0.7);
-	font-size: 15px;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
+	font-size: 15px;
 	line-height: 15px;
 	letter-spacing: 1px;
 }
 
 .footer_navigation_item {
-	font-family: "Gilroy", "Arial", sans-serif;
-	text-transform: uppercase;
 	color: #ffffff;
+	text-transform: uppercase;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 18px;
@@ -110,9 +118,11 @@ a  {
 .slider_service {
 	background-color: #e5e5e5;
 }
+
 .button_delivery {
     background-color: #000000;
 }
+
 .footer_menu {
 	background-color: #464646;
 }
