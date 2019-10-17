@@ -58,7 +58,7 @@ a  {
 	letter-spacing: 3px;
 }
 
-.footer_navigation_item.site_navigation {
+.footer_navigation_item .site_navigation {
 	color: #ffffff;
 }
 
@@ -130,16 +130,6 @@ a  {
 	font-size: 15px;
 	line-height: 15px;
 	letter-spacing: 1px;
-}
-
-.footer_navigation_item {
-	color: #ffffff;
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-weight: 800;
-	text-transform: uppercase;
-	font-size: 18px;
-	line-height: 24px;
-	letter-spacing: 3px;
 }
 
 .main_header {
