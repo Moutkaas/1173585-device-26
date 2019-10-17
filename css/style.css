@@ -64,6 +64,7 @@ a  {
 
 .catalog_item {
 	color: #000000;
+	text-transform: none;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 15px;
@@ -110,8 +111,7 @@ a  {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 47px;
-	line-height: 47px;
-	letter-spacing: 1px;
+	line-height: 48px;
 }
 
 .button_logout {
@@ -123,6 +123,14 @@ a  {
 	letter-spacing: 1px;
 }
 
+.filter_title {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .footer_navigation {
 	color: rgba(255, 255, 255, 0.7);
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -132,7 +140,7 @@ a  {
 	letter-spacing: 1px;
 }
 
-.main_header {
+.header {
 	background-color: rgba(240, 197, 46, 0.5);
 }
 
