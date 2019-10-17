@@ -17,10 +17,6 @@
 body {
 	background-color: #ffffff;
 	color: #000000;
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-weight: 800;
-	font-size: 14px;
-	line-height: 24px;
 	margin: 0;
 	padding: 0;
 }
@@ -106,14 +102,6 @@ a  {
 	letter-spacing: 1px;
 }
 
-.title_catalog {
-	color: #000000;
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-weight: 800;
-	font-size: 47px;
-	line-height: 48px;
-}
-
 .button_logout {
 	color: rgba(0, 0, 0, 0.3);
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -123,12 +111,35 @@ a  {
 	letter-spacing: 1px;
 }
 
-.filter_title {
+.title_catalog {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
+	font-size: 47px;
+	line-height: 48px;
+}
+.breadcrumbs_item {
+	color: rgba(0, 0, 0, 0.3);
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.title_item_catalog {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.price_catalog {
+	color: #464646;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .footer_navigation {
@@ -164,4 +175,39 @@ a  {
 .footer {
 	background-color: #464646;
 	color: #ffffff;
+}
+
+.button::before {
+	background-color: #f0c52e;
+}
+
+.navigation_item_login::before {
+	object-fit: contain;
+}
+
+input [name="search"]::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+input [name="search"]:hover::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+input [name="search"]:focus::placeholder {
+	color: #000000;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 1px;
 }
