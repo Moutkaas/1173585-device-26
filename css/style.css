@@ -26,6 +26,14 @@ a  {
 	color: inherit;
 }
 
+legend.filter_title {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+}
+
 .button {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -52,10 +60,6 @@ a  {
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 3px;
-}
-
-.footer_navigation_item .site_navigation {
-	color: #ffffff;
 }
 
 .catalog_item {
@@ -118,6 +122,7 @@ a  {
 	font-size: 47px;
 	line-height: 48px;
 }
+
 .breadcrumbs_item {
 	color: rgba(0, 0, 0, 0.3);
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -185,7 +190,7 @@ a  {
 	object-fit: contain;
 }
 
-input [name="search"]::placeholder {
+input[name="search"]::placeholder {
 	color: rgba(0, 0, 0, 0.3);
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
@@ -194,7 +199,7 @@ input [name="search"]::placeholder {
 	letter-spacing: 1px;
 }
 
-input [name="search"]:hover::placeholder {
+input[name="search"]:hover::placeholder {
 	color: rgba(0, 0, 0, 0.6);
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
@@ -203,11 +208,109 @@ input [name="search"]:hover::placeholder {
 	letter-spacing: 1px;
 }
 
-input [name="search"]:focus::placeholder {
+input[name="search"]:focus::placeholder {
 	color: #000000;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 1px;
+	border-bottom: 4px solid blue;
+}
+
+form >h3 {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 3px;
+}
+
+label  { /*стили для текста в фильтре*/
+	color: #000000;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+label:disabled  {
+	color: #a6a6a6;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.device_footer {
+	object-fit: contain;
+}
+
+.device_footer:hover .device_footer {
+	opacity: 0.6;
+}
+
+.device_footer:focus .device_footer {
+	opacity: 0.3;
+}
+
+.device {
+	object-fit: contain;
+}
+
+.device:hover .device {
+	opacity: 0.6;
+}
+
+.device:focus .device {
+	opacity: 0.3;
+}
+
+.social_icon {
+	object-fit: contain;
+	opacity: 0.3;
+}
+
+.social_icon:hover .social_icon {
+	opacity: 0.6;
+}
+
+.social_icon:focus .social_icon {
+	opacity: 0.1;
+}
+
+.logo-htmlacademy {
+	object-fit: contain;
+	src: url("../img/logo-htmlacademy.svg") format("svg");
+}
+
+.logo-htmlacademy:hover .logo-htmlacademy {
+	opacity: 0.6;
+}
+
+.logo-htmlacademy:focus  .logo-htmlacademy {
+	opacity: 0.3;
+}
+.footer_navigation_list  li {
+	color: #ffffff;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3px;
+}	
+
+.icon_footer_navigation {
+	object-fit: contain;
+	color: #ffc600;
+}
+
+.icon_footer_navigation:hover .icon_footer_navigation {
+	opacity: 0.6;
+}
+
+.icon_footer_navigation:focus .icon_footer_navigation {
+	opacity: 0.3;
 }
