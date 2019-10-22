@@ -26,7 +26,7 @@ a  {
 	color: inherit;
 }
 
-legend.filter_title {
+.filter_title {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -43,6 +43,10 @@ legend.filter_title {
 	letter-spacing: 4px;
 }
 
+.header {
+	background-color: rgba(240, 197, 46, 0.5);
+}
+
 .navigation_item {
 	color: #000000;
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -50,6 +54,14 @@ legend.filter_title {
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 1px;
+}
+
+.navigation_item:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation_item:focus {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .site_navigation {
@@ -62,6 +74,32 @@ legend.filter_title {
 	letter-spacing: 3px;
 }
 
+.site_navigation:hover:not(.hover_list) {
+	color: rgba(0, 0, 0, 0.6); 
+}
+
+.site_navigation:focus:not(.hover_list) {
+	color: rgba(0, 0, 0, 0.3); 
+}
+
+.hover_list .hover_virtual {
+	color: #000000;
+	text-transform: none;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 36px;
+	letter-spacing: 1px;
+}
+
+.hover_list .hover_virtual:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.hover_list .hover_virtual:focus {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog_item {
 	color: #000000;
 	text-transform: none;
@@ -70,6 +108,18 @@ legend.filter_title {
 	font-size: 15px;
 	line-height: 36px;
 	letter-spacing: 1px;
+}
+
+.popular-item {
+	background-color: rgba(240, 197, 46, 0.5);
+}
+
+.slider_service {
+	background-color: #e5e5e5;
+}
+
+.button_delivery {
+	background-color: #000000;
 }
 
 .about {
@@ -123,14 +173,6 @@ legend.filter_title {
 	line-height: 48px;
 }
 
-.breadcrumbs_item {
-	color: rgba(0, 0, 0, 0.3);
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 24px;
-}
-
 .title_item_catalog {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -147,42 +189,16 @@ legend.filter_title {
 	line-height: 24px;
 }
 
-.footer_navigation {
-	color: rgba(255, 255, 255, 0.7);
+.breadcrumbs_item {
+	color: rgba(0, 0, 0, 0.3);
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
-	font-size: 15px;
-	line-height: 15px;
-	letter-spacing: 1px;
-}
-
-.header {
-	background-color: rgba(240, 197, 46, 0.5);
-}
-
-.catalog_header {
-	background-color: rgba(240, 197, 46, 0.5);
-}
-
-.popular-item {
-	
-	background-color: rgba(240, 197, 46, 0.5);
-}
-
-.slider_service {
-	background-color: #e5e5e5;
-}
-
-.button_delivery {
-	background-color: #000000;
-}
-
-.footer {
-	background-color: #464646;
-	color: #ffffff;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .button::before {
+	content: "";
 	background-color: #f0c52e;
 }
 
@@ -218,7 +234,7 @@ input[name="search"]:focus::placeholder {
 	border-bottom: 4px solid blue;
 }
 
-form >h3 {
+.filter >h3 {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -227,44 +243,73 @@ form >h3 {
 	letter-spacing: 3px;
 }
 
-label  { /*стили для текста в фильтре*/
+.search_btn {
+	display: none;
+	background: transparent;
+	border: 2px solid #000000;
+	border-radius: none;
+	color: #000000;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 15px;
+	min-height: 49px;
+}
+
+.search_input:valid ~ .search_btn:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.search_input:valid ~ .search_btn:focus {
+	background-color: #000000;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.search_input:valid ~ .search_btn {
+	display: inline-block;
+	color: #000000;
+}
+
+.search_input:focus {
+	border-bottom: 2px solid #000000;
+}
+
+.filter_input ~ .filter_label { /*стили для текста в фильтре*/
 	color: #000000;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 14px;
-	line-height: 40px;
+	line-height: 14px;
 }
 
-label:disabled  {
+.filter_input:disabled + .filter_label {
 	color: #a6a6a6;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 14px;
-	line-height: 40px;
+	line-height: 14px;
 }
 
-.device_footer {
-	object-fit: contain;
+.filter_input:checked ~ .filter_label { /*стили для текста в фильтре*/
+	color: #000000;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 14px;
 }
 
-.device_footer:hover .device_footer {
-	opacity: 0.6;
-}
-
-.device_footer:focus .device_footer {
-	opacity: 0.3;
-}
-
-.device {
-	object-fit: contain;
-}
-
-.device:hover .device {
-	opacity: 0.6;
-}
-
-.device:focus .device {
-	opacity: 0.3;
+/*.filter_input ~ .filter_label::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ background-image: url("");
+ background-repeat: no-repeat;
+ background-size: cover;
+ cursor: pointer;
+ /*transition: all 0.15s ease-in-out; /*плавная смена фон картинки*/
 }
 
 .social_icon {
@@ -280,18 +325,28 @@ label:disabled  {
 	opacity: 0.1;
 }
 
-.logo-htmlacademy {
-	object-fit: contain;
-	src: url("../img/logo-htmlacademy.svg") format("svg");
+.footer {
+	background-color: #464646;
+	color: #ffffff;
 }
 
-.logo-htmlacademy:hover .logo-htmlacademy {
-	opacity: 0.6;
+.footer_navigation {
+	color: rgba(255, 255, 255, 0.7);
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 15px;
+	letter-spacing: 1px;
 }
 
-.logo-htmlacademy:focus  .logo-htmlacademy {
-	opacity: 0.3;
+.footer_navigation:hover {
+	color: #ffffff;
 }
+
+.footer_navigation:focus {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .footer_navigation_list  li {
 	color: #ffffff;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -300,17 +355,19 @@ label:disabled  {
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 3px;
-}	
-
-.icon_footer_navigation {
-	object-fit: contain;
-	color: #ffc600;
 }
 
-.icon_footer_navigation:hover .icon_footer_navigation {
-	opacity: 0.6;
+.footer_navigation_list li:hover {
+	color: rgba(255, 255, 255, 0.6);
 }
 
-.icon_footer_navigation:focus .icon_footer_navigation {
-	opacity: 0.3;
+.footer_navigation_list li:focus {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.address , .number_phone {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
 }
