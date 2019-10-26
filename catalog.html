@@ -45,7 +45,7 @@
       <nav>
         <ul class="breadcrumbs_list">
           <li><a href="" class="breadcrumbs_item">Главная</a></li>
-          <li><a href="" class="breadcrumbs_item">Каталог товаров</a></li>
+          <li><a href="" class="breadcrumbs_item breadcrumbs_catalog">Каталог товаров</a></li>
           <li><a href="" class="breadcrumbs_item">Моноподы для селфи</a></li>
         </ul>
       </nav>
@@ -81,12 +81,12 @@
           <button type="submit" class="button">Показать</button>
         </form>
       </section>
-      <section>
-        <h3>Сортировка</h3>
-        <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По популярности</a></li>
+      <section class="sorting">
+          <h3 class="sorting_title">Сортировка:</h3>
+        <ul class="sorting_list">
+          <li class="sorting_item sorting_price"><a href="">По цене</a></li>
+          <li class="sorting_item"><a href="">По типу</a></li>
+          <li class="sorting_item"><a href="">По популярности</a></li>
           <img src="img/icon-up-dir.svg">
           <img src="img/icon-down-dir.svg">
         </ul>
@@ -98,8 +98,8 @@
         </a>
         <p class="price_catalog">500 руб.</p>
         <div>
-          <button type="Корзина">Корзина</button>
-          <button type="Добавить к сравнению">Добавить к сравнению</button>
+          <button type="button" class="cart_btn"> В корзину</button>
+          <button type="button" class="compare_btn">Добавить к сравнению</button>
         </div>
       </section>
       <section>
@@ -109,8 +109,8 @@
         </a>
         <p class="price_catalog">1 500 руб.</p>
         <div>
-          <button type="Корзина">Корзина</button>
-          <button type="Добавить к сравнению">Добавить к сравнению</button>
+          <button type="button" class="cart_btn">В корзину</button>
+          <button type="button" class="compare_btn">Добавить к сравнению</button>
         </div>
       </section>
       <section>
@@ -120,8 +120,8 @@
         </a>
         <p class="price_catalog">2 500 руб.</p>
         <div>
-          <button type="Корзина">Корзина</button>
-          <button type="Добавить к сравнению">Добавить к сравнению</button>
+          <button type="button" class="cart_btn">В корзину</button>
+          <button type="button" class="compare_btn">Добавить к сравнению</button>
         </div>
       </section>
       <section>
@@ -131,12 +131,12 @@
         </a>
         <p class="price_catalog">4 900 руб.</p>
         <div>
-          <button type="Корзина">Корзина</button>
-          <button type="Добавить к сравнению">Добавить к сравнению</button>
+          <button type="button" class="cart_btn">В корзину</button>
+          <button type="button" class="compare_btn">Добавить к сравнению</button>
         </div>
       </section>
-      <ul>
-      <li><a href="">Назад</a></li>
+      <ul class="pagination_list">
+      <li class="pagination_item"><a href="">Назад</a></li>
       <li><a href="">1</a></li>
       <li><a href="">2</a></li>
       <li><a href="">3</a></li>

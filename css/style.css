@@ -114,6 +114,26 @@ a  {
 	background-color: rgba(240, 197, 46, 0.5);
 }
 
+.popular-item:hover {
+	background-color: #f0c52e;
+}
+
+.popular-item:focus {
+	background-color: rgba(240, 197, 46, 0.3);
+}
+
+.popular_title , .popular_title:hover {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.popular_title:focus {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .slider_service {
 	background-color: #e5e5e5;
 }
@@ -197,6 +217,22 @@ a  {
 	line-height: 24px;
 }
 
+.breadcrumbs_catalog {
+	color: rgba(0, 0, 0, 0.3);
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.breadcrumbs_catalog:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs_catalog:focus {
+	color: rgba(0, 0, 0, 0.1);
+}
+
 .button::before {
 	content: "";
 	background-color: #f0c52e;
@@ -234,15 +270,6 @@ input[name="search"]:focus::placeholder {
 	border-bottom: 4px solid blue;
 }
 
-.filter >h3 {
-	color: #000000;
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-weight: 800;
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: 3px;
-}
-
 .search_btn {
 	display: none;
 	background: transparent;
@@ -273,6 +300,15 @@ input[name="search"]:focus::placeholder {
 
 .search_input:focus {
 	border-bottom: 2px solid #000000;
+}
+
+.filter >h3 {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 3px;
 }
 
 .filter_input ~ .filter_label { /*стили для текста в фильтре*/
@@ -310,6 +346,58 @@ input[name="search"]:focus::placeholder {
  background-size: cover;
  cursor: pointer;
  /*transition: all 0.15s ease-in-out; /*плавная смена фон картинки*/
+}
+
+.sorting_title {
+    color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 3px;
+}
+
+.sorting_list {
+	color: rgba(0, 0, 0, 0.3);
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.sorting_price:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting_price:focus {
+	color: #000000;
+}
+
+.cart_btn {
+	color: #000000;
+	text-transform: uppercase;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 3px;
+}
+
+.compare_btn {
+	color: rgba(0, 0, 0, 0.5);
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 13px;
+    letter-spacing: 1px;
+}
+
+.compare_btn:hover {
+    color: #000000;
+}
+
+.compare_btn:focus {
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .social_icon {
@@ -368,6 +456,35 @@ input[name="search"]:focus::placeholder {
 .address , .number_phone {
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
-    font-size: 15px;
-    line-height: 15px;
+	font-size: 15px;
+	line-height: 15px;
 }
+
+.modal_label {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 18px;
+}
+
+.modal_name_input {
+	background-color: #f2f2f2;
+	color: rgba(70, 70, 70, 0.4);
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.modal_name_input:hover {
+	background-color: #eaeaea;
+}
+
+.modal_name_input:focus {
+	color: #464646;
+	background-color: #ffffff;
+	border: solid 3px #f0c52e;
+}
+

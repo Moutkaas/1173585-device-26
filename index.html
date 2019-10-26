@@ -114,16 +114,16 @@
       </div>
       <section>
         <ul class="popular_list">
-          <li><a href=""><img src="img/popular-1.svg" class="popular-item">Виртуальная реальность</a></li>
-          <li><a href=""><img src="img/popular-2.svg" class="popular-item">Моноподы для селфи</a></li>
-          <li><a href=""><img src="img/popular-3.svg" class="popular-item">Экшн-камеры</a></li>
-          <li><a href=""><img src="img/popular-4.svg" class="popular-item">Фитнес браслеты</a></li>
-          <li><a href=""><img src="img/popular-5.svg" class="popular-item">Умные часы</a></li>
-          <li><a href=""><img src="img/popular-6.svg" сlass="popular-item">Квадрокоптеры</a></li>
+          <li><a href="" class="popular_title"><img src="img/popular-1.svg" class="popular-item">Виртуальная реальность</a></li>
+          <li><a href="" class="popular_title"><img src="img/popular-2.svg" class="popular-item">Моноподы для селфи</a></li>
+          <li><a href="" class="popular_title"><img src="img/popular-3.svg" class="popular-item">Экшн-камеры</a></li>
+          <li><a href="" class="popular_title"><img src="img/popular-4.svg" class="popular-item">Фитнес браслеты</a></li>
+          <li><a href="" class="popular_title"><img src="img/popular-5.svg" class="popular-item">Умные часы</a></li>
+          <li><a href="" class="popular_title"><img src="img/popular-6.svg" сlass="popular-item">Квадрокоптеры</a></li>
         </ul>
       </section>
-      <div class="slider_service">
         <section>
+      <div class="slider_service">
           <!--<h2>Доставка</h2>-->
           <ul class="">
             <li class="active-service"><a href="">Доставка</a></li>
@@ -203,12 +203,12 @@
     </footer>
     <div>
       <button type="button"><img src="" class="modal-close" alt="закрыть">Закрыть</button>
-      <form>
-        <label for="name-surname">Ваше имя:</label>
-        <input id="name-surname" type="text" name="name-surname" placeholder="Имя Фамилия">
-        <label for="user-email">Ваш e-mail:</label>
+      <form class="modal">
+        <label for="name-surname" class="modal_label">Ваше имя:</label>
+        <input id="name-surname" type="text" name="name-surname" placeholder="Имя Фамилия" class="modal_name_input" required>
+        <label for="user-email" class="modal_label">Ваш e-mail:</label>
         <input id="user-email" type="text" name="user-email" placeholder="email@example.com">
-        <label for="info-field">Текст письма:</label>
+        <label for="info-field" class="modal_label">Текст письма:</label>
         <textarea id="info-field" name="info" value>В свободной форме</textarea>
         <button type="submit">Отправить</button>
       </form>
