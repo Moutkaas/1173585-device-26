@@ -76,6 +76,11 @@ html {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.guarantee_btn:focus {
+    background-color: #000000;
+    color: #f7e184;
+}
+    
 .header {
 	background-color: rgba(240, 197, 46, 0.5);
 }
@@ -156,6 +161,38 @@ html {
 	color: rgba(0, 0, 0, 0.3); 
 }
 
+.title_slider_main {
+	color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+    font-size: 47px;
+    line-height: 47px;
+}
+
+.text_slider_main {
+    color: #464646;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.parameters_slider_main {
+    color: #000000;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.desc_slider_main {
+	color: #464646;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+    font-size: 13px;
+    line-height: 13px;
+}
+
 .catalog_item {
 	color: #000000;
 	text-transform: none;
@@ -206,7 +243,7 @@ html {
 	background-color: #000000;
 }
 
-.delivery  {
+.title_service  {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -214,7 +251,7 @@ html {
 	line-height: 47px;
 }
 
-.title_delivery {
+.text_service {
 	color: #464646;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
