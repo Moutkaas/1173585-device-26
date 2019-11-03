@@ -76,7 +76,7 @@ html {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.guarantee_btn:focus {
+.service_link_btn:focus {
     background-color: #000000;
     color: #f7e184;
 }
@@ -211,28 +211,33 @@ html {
 	color: rgba(0, 0, 0, 0.3);  
 }		
 
-.popular-item {
-	background-color: rgba(240, 197, 46, 0.5);
-}
-
-.popular-item:hover {
-	background-color: #f0c52e;
-}
-
-.popular-item:focus {
-	background-color: rgba(240, 197, 46, 0.3);
-}
-
 .popular_title , .popular_title:hover {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
+	display: inline-block;
 }
 
 .popular_title:focus {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.popular_img_wrapper {
+	background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular_title:hover .popular_img_wrapper {
+	background-color: #f0c52e; 
+}
+
+.popular_title:focus .popular_img_wrapper {
+	background-color: #f0c52e;; 
+}
+
+.popular_title:focus .popular-item {
+	opacity: 0.3;
 }
 
 .slider_service {
@@ -406,7 +411,7 @@ input[name="search"]:focus::placeholder {
 	border-bottom: 2px solid #000000;
 }
 
-.filter >h3 {
+.filter > h3 {
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -415,7 +420,7 @@ input[name="search"]:focus::placeholder {
 	letter-spacing: 3px;
 }
 
-.filter_input ~ .filter_label { /*стили для текста в фильтре*/
+.filter_input + .filter_label { /*стили для текста в фильтре*/
 	color: #000000;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
@@ -431,7 +436,7 @@ input[name="search"]:focus::placeholder {
 	line-height: 14px;
 }
 
-.filter_input:checked ~ .filter_label { /*стили для текста в фильтре*/
+.filter_input:checked + .filter_label { /*стили для текста в фильтре*/
 	color: #000000;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
