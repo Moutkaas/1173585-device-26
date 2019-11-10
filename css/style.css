@@ -97,6 +97,7 @@ html {
 
 .header_container_right {
 	min-width: 500px;
+	border: 2px solid red;
 }
 
 .header_container_link_right {
@@ -107,9 +108,11 @@ html {
 
 .header_container_left {
 	min-width: 500px;
+	border: 2px solid green;
+
 }
 
-.header_container_link_left a {
+.header_container_left a {
 	padding: 0;
 	min-width: 240px;
 	color: #000000;
@@ -119,6 +122,19 @@ html {
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 3px;
+}
+
+.header_container_left a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.header_container_left a:focus {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.container_hover_list {
+	margin-top: 26px;
+
 }
 
 .header_logo:hover {
@@ -213,7 +229,8 @@ html {
 }
 
 .hover_list { 
-	display: none; 
+	display: none;
+	list-style: none; 
 }
 
 .slider_main {
@@ -404,7 +421,14 @@ html {
 }
 
 .container_title_catalog {
-	margin-left: 201px;
+	display: flex;
+	border: 2px solid red;
+	flex-direction: column;
+	min-width: 1160px;
+}
+
+.container_title_catalog h2 {
+	margin-left: 73px;
 }
 
 .title_catalog {
@@ -432,9 +456,10 @@ html {
 }
 
 .breadcrumbs_list {
-	display: flex;
-	list-style: none;
-	margin-left: 201px;
+    list-style: none;
+    display: flex;
+    border: 2px solid black;
+    margin-left: 30px;
 }
 
 .breadcrumbs_item , .breadcrumbs_monopod {
@@ -517,13 +542,28 @@ input[name="search"]:focus::placeholder {
 	border-bottom: 2px solid #000000;
 }
 
-.filter > h3 {
+.container_filter_sorting_wrapper{
+	display: flex;
+}
+
+.container_filter {
+	background-color: #ebebeb;
+	display: flex;
+	flex-direction: column;
+}
+
+.container_filter_title {
+	background-color: #d9d9d9;
 	color: #000000;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3px;
+	min-width: 467px;
+	min-height: 71px;
+	display: flex;
+	justify-content: center;
 }
 
 .filter_input + .filter_label { /*стили для текста в фильтре*/
@@ -564,6 +604,16 @@ input[name="search"]:focus::placeholder {
  transition: all 0.15s ease-in-out;
  } плавная смена фон картинки*/
 
+.container_sorting_title {
+	background-color: #ebebeb;
+	min-width:  972px;
+	min-height: 71px;
+}
+
+.sorting_list {
+	list-style: none;
+	display: flex;
+}
 
  .sorting_title {
  	color: #000000;
@@ -590,7 +640,22 @@ input[name="search"]:focus::placeholder {
  	color: #000000;
  }
 
- .compare_btn {
+ .container_img_catalog {
+ 	padding: 69px 140px 115px 73px;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ }
+
+ .container_img_catalog_wrapper {
+ 	margin-right: 40px;
+ }
+
+.container_img_catalog_wrapper img {
+ 	width: 360px;
+ 	height: 380px;
+ }	
+
+.compare_btn {
  	color: rgba(0, 0, 0, 0.5);
  	border: none;
  	background-color: transparent;
@@ -645,19 +710,73 @@ input[name="search"]:focus::placeholder {
  	color: rgba(0, 0, 0, 0.6);
  }
 
- .container_footer_top {
+ .footer { 
  	display: flex;
+ 	background-color: #464646;
+ 	color: #ffffff;
+ 	padding: 65px 140px 66px 140px;
+ 	border: 2px solid red;
+ 	flex-direction: column;
  }
 
- .container_footer_navigation {
-
- 	min-width: 210px;
+ .container_footer_logo {
+ 	display: flex;
+ 	border: 2px solid green;
+ 	min-width: 1160px;
+ 	justify-content: space-between;
  }
 
- .social_icon {
+ .container_address {
+ 	min-width: 205px;
+ 	margin-top: 10px;
+ }
+
+.container_footer_navigation_list {
+ 	display: flex;
+ 	flex-direction: row;
+ 	min-width: 1160px;
+ 	border: 2px solid violet;
+ 	justify-content: space-between;
+ }
+
+ .footer_navigation_list {
+ 	list-style: none;
+ 	display: flex;
+ 	justify-content: center;
+ 	min-width: 420px;
+ }
+
+ .footer_navigation_list li {
+ 	margin-right: 38px;
+ }
+
+ .container_number_phone {
+    min-width: 170px;
+ 	margin-top: 21px;
+}
+
+ .container_social_icon_list {
+ 	display: flex;
+    min-width: 1160px;
+ 	border: 2px solid green;
+ }
+
+.social_icon {
  	object-fit: contain;
  	opacity: 0.3;
  	list-style: none;
+ 	border: 2px solid blue;
+    display: flex;
+ }
+
+ .social_icon li {
+ 	margin-right: 23px;
+ }
+
+ .container_footer_logo_html_academy {
+ 	border: 2px solid red;
+ 	display: flex;
+ 	margin-left: auto;
  }
 
  .social_icon a:hover .social_icon {
@@ -666,13 +785,6 @@ input[name="search"]:focus::placeholder {
 
  .social_icon a:focus .social_icon {
  	opacity: 0.1;
- }
-
- .footer { 
- 	display: flex;
- 	background-color: #464646;
- 	color: #ffffff;
- 	padding: 65px 140px 66px 140px;
  }
 
  .footer_logo svg {
@@ -702,11 +814,6 @@ input[name="search"]:focus::placeholder {
 
  .footer_navigation:focus {
  	color: rgba(255, 255, 255, 0.3);
- }
-
- .footer_navigation_list {
- 	list-style: none;
- 	display: flex;
  }
 
  .footer_navigation_list  li {
